@@ -91,7 +91,7 @@ setopt pushdignoredups
 setopt pushdminus
 
 PROMPT="$PROMPT"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
-#eval `dircolors ~/sandbox/dircolors-solarized/dircolors.ansi-universal`
+eval `dircolors ~/sandbox/dircolors-solarized/dircolors.ansi-universal`
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
 zle -N up-line-or-beginning-search
