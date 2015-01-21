@@ -236,3 +236,12 @@ imap <S-Tab> <Esc><<i
 
 set t_ZH=[3m
 highlight Comment cterm=italic
+
+
+if &term == "screen-256color"
+	set t_ts=k
+	set t_fs=\
+endif
+
+set title
+set titlestring=vim\ %t
