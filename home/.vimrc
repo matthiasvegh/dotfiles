@@ -176,7 +176,12 @@ Bundle 'farseer90718/vim-taskwarrior'
 Bundle 'Shougo/unite.vim'
 Bundle 'ConradIrwin/vim-bracketed-paste'
 Bundle 'matthiasvegh/clighter'
-" Heavily experimental!
+" Heavily experimental fork of bbchung/clighter
+" Flags for it:
+let g:clighter_highlight_groups = ['clighterMacroInstantiation','clighterStructDecl','clighterClassDecl','clighterEnumDecl','clighterEnumConstantDecl','clighterTypeRef','clighterDeclRefExprEnum', 'clighterNamespace']
+hi link clighterNamespace Constant
+
+
 nnoremap <silent> <C-p> :Unite -start-insert -buffer-name=files -winheight=10 file_rec/async<cr>
 nnoremap <Leader>f :Unite -auto-preview grep:.<cr>
 " Bundles over
