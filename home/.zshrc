@@ -107,5 +107,7 @@ inform_tmux() {
 	fi
 }
 
+export SHELL=/bin/zsh
+
 precmd_functions+='inform_tmux'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
