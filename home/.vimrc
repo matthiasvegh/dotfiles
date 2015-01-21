@@ -175,6 +175,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'farseer90718/vim-taskwarrior'
 Bundle 'Shougo/unite.vim'
 Bundle 'ConradIrwin/vim-bracketed-paste'
+Bundle 'matthiasvegh/clighter'
+" Heavily experimental!
 nnoremap <silent> <C-p> :Unite -start-insert -buffer-name=files -winheight=10 file_rec/async<cr>
 nnoremap <Leader>f :Unite -auto-preview grep:.<cr>
 " Bundles over
