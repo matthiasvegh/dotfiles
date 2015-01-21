@@ -234,4 +234,5 @@ au InsertEnter * hi statusline guibg=Blue ctermfg=8 guifg=White ctermbg=2
 nnoremap <esc> :let @/ = ""<return><esc>
 imap <S-Tab> <Esc><<i
 
-
+set t_ZH=[3m
+highlight Comment cterm=italic
