@@ -26,19 +26,19 @@ set incsearch
 let mapleader = ","
 nnoremap <Leader>n :NERDTreeFocus<cr>
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 " Bundles
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'rosenfeld/conque-term'
-Bundle 'scrooloose/nerdtree'
-Bundle 'bronson/vim-trailing-whitespace'
-Bundle 'vim-jp/cpp-vim'
-Bundle 'rhysd/vim-clang-format'
-Bundle 'itchyny/lightline.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'rosenfeld/conque-term'
+Plugin 'scrooloose/nerdtree'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'vim-jp/cpp-vim'
+Plugin 'rhysd/vim-clang-format'
+Plugin 'itchyny/lightline.vim'
 set foldmethod=marker
 " {{{
 let g:lightline = {
@@ -158,34 +158,34 @@ let g:vimshell_force_overwrite_statusline = 0
 " }}}
 set noshowmode
 let NERDTreeIgnore = ['\.pyc$', '\.o$']
-Bundle 'kana/vim-operator-user'
-Bundle 'vim-scripts/TeTrIs.vim'
-Bundle 'Shougo/vimproc.vim'
-Bundle 'xolox/vim-misc'
-Bundle 'kshenoy/vim-signature'
-Bundle 'xolox/vim-session'
+Plugin 'kana/vim-operator-user'
+Plugin 'vim-scripts/TeTrIs.vim'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'xolox/vim-misc'
+Plugin 'kshenoy/vim-signature'
+Plugin 'xolox/vim-session'
 :let g:session_autosave = 'no'
 :let g:session_autoload = 'no'
-Bundle 'justincampbell/vim-eighties'
+Plugin 'justincampbell/vim-eighties'
 let g:eighties_enabled = 0
 let g:eighties_minimum_width = 80
 let g:eighties_compute = 1 " Disable this if you just want the minimum + extra
-Bundle 'vim-scripts/vimux'
-Bundle 'tpope/vim-fugitive'
-Bundle 'farseer90718/vim-taskwarrior'
-Bundle 'Shougo/unite.vim'
-Bundle 'ConradIrwin/vim-bracketed-paste'
-Bundle 'matthiasvegh/clighter'
+Plugin 'vim-scripts/vimux'
+Plugin 'tpope/vim-fugitive'
+Plugin 'farseer90718/vim-taskwarrior'
+Plugin 'Shougo/unite.vim'
+nnoremap <silent> <C-p> :Unite -start-insert -buffer-name=files -winheight=10 file_rec/async<cr>
+nnoremap <Leader>f :Unite -auto-preview grep:.<cr>
+Plugin 'ConradIrwin/vim-bracketed-paste'
+Plugin 'matthiasvegh/clighter'
 " Heavily experimental fork of bbchung/clighter
 " Flags for it:
 let g:clighter_highlight_groups = ['clighterMacroInstantiation','clighterStructDecl','clighterClassDecl','clighterEnumDecl','clighterEnumConstantDecl','clighterTypeRef','clighterDeclRefExprEnum', 'clighterNamespace']
 hi link clighterNamespace Constant
 
 
-nnoremap <silent> <C-p> :Unite -start-insert -buffer-name=files -winheight=10 file_rec/async<cr>
-nnoremap <Leader>f :Unite -auto-preview grep:.<cr>
 " Bundles over
-"
+call vundle#end()
 " YouCompleteMe Config
 let g:ycm_global_ycm_extra_conf = '/home/emtyvgh/.ycm_extra_conf.py'
 let g:ycm_autoclose_preview_window_after_completion = 1
