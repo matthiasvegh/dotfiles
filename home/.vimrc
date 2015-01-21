@@ -231,12 +231,6 @@ vnoremap <F10> <ESC>l
 au InsertLeave * hi statusline guibg=DarkGrey ctermfg=8 guifg=White ctermbg=15
 au InsertEnter * hi statusline guibg=Blue ctermfg=8 guifg=White ctermbg=2
 
-if has("autocmd2")
-	au InsertEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Solarized/cursor_shape ibeam&"
-	au InsertLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Solarized/cursor_shape block&"
-	au VimEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Solarized/cursor_shape block&"
-	au VimLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Solarized/cursor_shape ibeam&"
-endif
 nnoremap <esc> :let @/ = ""<return><esc>
 imap <S-Tab> <Esc><<i
 
