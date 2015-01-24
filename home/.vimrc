@@ -24,7 +24,6 @@ endif
 set smartcase
 set incsearch
 let mapleader = ","
-nnoremap <Leader>n :NERDTreeFocus<cr>
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -35,6 +34,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'rosenfeld/conque-term'
 Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+nnoremap <Leader>n :NERDTreeSteppedOpen<cr>
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'vim-jp/cpp-vim'
 Plugin 'rhysd/vim-clang-format'
