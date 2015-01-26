@@ -46,7 +46,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="false"
 autoload -U compinit
 compinit
 
-plugins=(git screen extract zsh-syntax-highlighting colorize safe-paste history-substring-search)
+plugins=(git screen extract zsh-syntax-highlighting colorize safe-paste history-substring-search autojump catimg command-not-found git-extras pip)
 source $ZSH/oh-my-zsh.sh
 alias ct=cleartool
 export PATH=/proj/cudbdm/tools/internal/bin:/proj/madridcudb/cudb_sec/Design/clearstart_cudb:$PATH
