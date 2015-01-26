@@ -109,5 +109,9 @@ inform_tmux() {
 
 export SHELL=/bin/zsh
 
+echo ""
+fortune
+echo ""
+
 precmd_functions+='inform_tmux'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
