@@ -245,10 +245,13 @@ imap <S-Tab> <Esc><<i
 set t_ZH=[3m
 highlight Comment cterm=italic
 
+let shell=$SHELL
 
-if &term == "screen-256color"
-	set t_ts=k
-	set t_fs=\
+if shell == '/usr/bin/zsh'
+	if &term == "screen-256color"
+		set t_ts=k
+		set t_fs=\
+	endif
 endif
 
 set title
