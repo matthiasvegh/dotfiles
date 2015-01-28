@@ -165,7 +165,7 @@ Plugin 'Shougo/vimproc.vim'
 Plugin 'xolox/vim-misc'
 Plugin 'kshenoy/vim-signature'
 Plugin 'xolox/vim-session'
-:let g:session_autosave = 'no'
+:let g:session_autosave = 'yes'
 :let g:session_autoload = 'no'
 Plugin 'justincampbell/vim-eighties'
 let g:eighties_enabled = 0
@@ -178,6 +178,7 @@ Plugin 'Shougo/unite.vim'
 nnoremap <silent> <C-p> :Unite -start-insert -buffer-name=files -winheight=10 file_rec/async<cr>
 nnoremap <Leader>f :Unite -auto-preview grep:.<cr>
 Plugin 'ConradIrwin/vim-bracketed-paste'
+Plugin 'tpope/vim-sleuth'
 Plugin 'matthiasvegh/clighter'
 " Heavily experimental fork of bbchung/clighter
 " Flags for it:
