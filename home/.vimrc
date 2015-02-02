@@ -161,6 +161,7 @@ set noshowmode
 let NERDTreeIgnore = ['\.pyc$', '\.o$']
 Plugin 'kana/vim-operator-user'
 Plugin 'vim-scripts/TeTrIs.vim'
+Plugin 'vim-scripts/cmdalias.vim'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'xolox/vim-misc'
 Plugin 'kshenoy/vim-signature'
@@ -213,6 +214,10 @@ let g:clang_format#style_options = {
 autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
 autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
 
+autocmd VimEnter * Alias W w
+autocmd VimEnter * Alias Q q
+autocmd VimEnter * Alias Qa qa
+autocmd VimEnter * Alias X x
 
 set t_Co=256
 syntax on
