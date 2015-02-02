@@ -100,6 +100,11 @@ bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
 REPORTTIME=10
 
+_CURRENTSIZE=`wc -l < $HISTFILE`
+SAVEHIST=$(( $_CURRENTSIZE * 2))
+_CURRENTSIZE=
+HISTSIZE=$SAVEHIST
+
 inform_tmux() {
 	if [[ -n "$TMUX" ]]; then
 		tmux setenv "$(tmux display -p 'TMUX_PWD_#D')" "$PWD"
