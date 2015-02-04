@@ -118,5 +118,7 @@ echo ""
 fortune
 echo ""
 
+[ -e "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
+
 precmd_functions+='inform_tmux'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
