@@ -5,5 +5,5 @@ before_script:
     - gem install homesick
 script:
     - homesick clone "matthiasvegh/dotfiles"
-    - homesick symlink "dotfiles"
+    - homesick symlink -f "dotfiles"
     - homesick rc --force "dotfiles"
