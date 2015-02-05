@@ -1,0 +1,7 @@
+language: bash
+before_script:
+    - gem install homesick
+script:
+    - homesick clone "matthiasvegh/dotfiles"
+    - homesick symlink "dotfiles"
+    - homesick rc --force "dotfiles"
