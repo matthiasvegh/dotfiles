@@ -1,4 +1,6 @@
 language: bash
+git:
+    submodules: false
 before_script:
     - gem install homesick
 script:
