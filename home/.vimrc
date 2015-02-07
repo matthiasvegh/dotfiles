@@ -213,6 +213,7 @@ let g:clang_format#style_options = {
 
 autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
 autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
+autocmd FileType c,cpp,objc let g:clang_format#auto_format_on_insert_leave=1
 
 autocmd VimEnter * Alias W w
 autocmd VimEnter * Alias Q q
