@@ -180,6 +180,7 @@ nnoremap <silent> <C-p> :Unite -start-insert -buffer-name=files -winheight=10 fi
 nnoremap <Leader>f :Unite -auto-preview grep:.<cr>
 Plugin 'ConradIrwin/vim-bracketed-paste'
 Plugin 'tpope/vim-sleuth'
+Plugin 'tmux-plugins/vim-tmux'
 Plugin 'matthiasvegh/clighter'
 " Heavily experimental fork of bbchung/clighter
 " Flags for it:
