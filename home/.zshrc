@@ -112,7 +112,7 @@ inform_tmux() {
 	fi
 }
 
-export SHELL=/bin/zsh
+export SHELL=`which zsh`
 
 echo ""
 fortune
