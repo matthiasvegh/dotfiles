@@ -187,7 +187,7 @@ Plugin 'matthiasvegh/clighter'
 let g:clighter_highlight_groups = ['clighterMacroInstantiation','clighterStructDecl','clighterClassDecl','clighterEnumDecl','clighterEnumConstantDecl','clighterTypeRef','clighterDeclRefExprEnum', 'clighterNamespace']
 hi link clighterNamespace Constant
 
-
+Plugin 'matthiasvegh/ycmlighter'
 " Bundles over
 call vundle#end()
 " YouCompleteMe Config
