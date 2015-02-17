@@ -181,9 +181,7 @@ nnoremap <Leader>f :Unite -auto-preview grep:.<cr>
 Plugin 'ConradIrwin/vim-bracketed-paste'
 Plugin 'tpope/vim-sleuth'
 Plugin 'tmux-plugins/vim-tmux'
-Plugin 'matthiasvegh/clighter'
-" Heavily experimental fork of bbchung/clighter
-" Flags for it:
+Plugin 'bbchung/clighter'
 let g:clighter_highlight_groups = ['clighterMacroInstantiation','clighterStructDecl','clighterClassDecl','clighterEnumDecl','clighterEnumConstantDecl','clighterTypeRef','clighterDeclRefExprEnum', 'clighterNamespace']
 hi link clighterNamespace Constant
 
