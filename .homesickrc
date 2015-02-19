@@ -5,4 +5,5 @@
 `mkdir -p ~/.vim/colors`
 `cp /tmp/solarized.git/colors/solarized.vim ~/.vim/colors`
 `vim +PluginInstall +qall`
+`~/.vim/bundle/YouCompleteMe/install.sh --clang-completer`
 `mkdir -p ~/.zsh/completion`
