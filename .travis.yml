@@ -6,4 +6,3 @@ before_script:
 script:
     - homesick clone --force "matthiasvegh/dotfiles"
     - homesick symlink --force "dotfiles"
-    - homesick rc --force "dotfiles"
