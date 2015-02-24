@@ -60,6 +60,11 @@ function module() {
 
 alias l='ls -CF'
 
+function mkcd() {
+	mkdir "$@"
+	cd "$@"
+}
+
 # let other programs know that we are using bash
 export SHELL=/bin/bash
 
