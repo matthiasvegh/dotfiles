@@ -1,0 +1,7 @@
+.ycm_extra_conf.py
+*.swp
+compile_commands.json
+ycm_jsondb_core.py
+ycm_jsondb_core.pyc
+ycm_jsondb_config.py
+ycm_jsondb_config.pyc
