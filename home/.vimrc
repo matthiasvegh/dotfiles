@@ -184,7 +184,7 @@ Plugin 'tmux-plugins/vim-tmux'
 Plugin 'bbchung/clighter'
 let g:clighter_highlight_groups = ['clighterMacroInstantiation','clighterStructDecl','clighterClassDecl','clighterEnumDecl','clighterEnumConstantDecl','clighterTypeRef','clighterDeclRefExprEnum', 'clighterNamespace']
 hi link clighterNamespace Constant
-let g:clighter_cursor_hl_mode=1 " enable fast symbol highlight
+let g:clighter_occurrences_mode=1 " enable fast symbol highlight
 Plugin 'rhysd/committia.vim'
 " Bundles over
 call vundle#end()
