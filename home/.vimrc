@@ -25,6 +25,8 @@ set smartcase
 set incsearch
 let mapleader = ","
 
+set colorcolumn=81
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " Bundles
