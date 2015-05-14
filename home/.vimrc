@@ -189,6 +189,7 @@ hi link clighterNamespace Constant
 let g:clighter_occurrences_mode=1 " enable fast symbol highlight
 Plugin 'rhysd/committia.vim'
 Plugin 'jaxbot/semantic-highlight.vim'
+Plugin 'solarnz/thrift.vim'
 " Bundles over
 call vundle#end()
 " YouCompleteMe Config
