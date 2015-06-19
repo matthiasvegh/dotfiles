@@ -184,8 +184,9 @@ Plugin 'ConradIrwin/vim-bracketed-paste'
 Plugin 'tpope/vim-sleuth'
 Plugin 'tmux-plugins/vim-tmux'
 Plugin 'bbchung/clighter'
-let g:clighter_highlight_groups = ['clighterMacroInstantiation','clighterStructDecl','clighterClassDecl','clighterEnumDecl','clighterEnumConstantDecl','clighterTypeRef','clighterDeclRefExprEnum', 'clighterNamespace']
 hi link clighterNamespace Constant
+hi link clighterNamespaceRef clighterNamespace
+hi link clighterMemberRefExprCall clighterMemberRefExprVar
 let g:clighter_occurrences_mode=1 " enable fast symbol highlight
 Plugin 'rhysd/committia.vim'
 Plugin 'jaxbot/semantic-highlight.vim'
@@ -219,7 +220,8 @@ let g:clang_format#style_options = {
 autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
 autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
 autocmd FileType c,cpp,objc let g:clang_format#auto_format_on_insert_leave=1
-
+autocmd FileType c,cpp,objc hi clighterMemberRefExprVar term=NONE cterm=NONE ctermbg=8 ctermfg=187 gui=NONE
+autocmd FileType c,cpp,objc hi clighterMacroInstantiation term=NONE cterm=NONE ctermbg=8 ctermfg=5 gui=NONE
 autocmd VimEnter * Alias W w
 autocmd VimEnter * Alias Q q
 autocmd VimEnter * Alias Qa qa
