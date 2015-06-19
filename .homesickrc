@@ -1,4 +1,4 @@
-`sudo add-apt-repository ppa:neovim-ppa/unstable`
+`sudo add-apt-repository --yes ppa:neovim-ppa/unstable`
 `sudo apt-get update`
 `sudo apt-get install neovim`
 `sudo pip install neovim`
