@@ -233,12 +233,11 @@ set background=dark
 set backspace=indent,eol,start
 colorscheme solarized
 set wildmenu
+set wildmode=full
 let g:NERDTreeDirArrows=0
 "highlight Comment cterm=underline
 "let g:Powerline_symbols = 'fancy'
 " now set it up to change the status line based on mode
-" syntastic requires pathogen for some obscure reason..
-execute pathogen#infect()
 
 " bindkeys
 map gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
@@ -252,6 +251,7 @@ inoremap <F10> <ESC>l
 vnoremap <F10> <ESC>l
 au InsertLeave * hi statusline guibg=DarkGrey ctermfg=8 guifg=White ctermbg=15
 au InsertEnter * hi statusline guibg=Blue ctermfg=8 guifg=White ctermbg=2
+tnoremap <F10> <C-\><C-n>
 
 nnoremap <esc> :let @/ = ""<return><esc>
 imap <S-Tab> <Esc><<i
