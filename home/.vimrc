@@ -237,8 +237,6 @@ let g:NERDTreeDirArrows=0
 "highlight Comment cterm=underline
 "let g:Powerline_symbols = 'fancy'
 " now set it up to change the status line based on mode
-" syntastic requires pathogen for some obscure reason..
-execute pathogen#infect()
 
 " bindkeys
 map gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
