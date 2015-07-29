@@ -189,6 +189,7 @@ let g:clighter_occurrences_mode=1 " enable fast symbol highlight
 Plugin 'rhysd/committia.vim'
 Plugin 'jaxbot/semantic-highlight.vim'
 Plugin 'solarnz/thrift.vim'
+Plugin 'lyuts/vim-rtags'
 Plugin 'wellle/tmux-complete.vim'
 let g:tmuxcomplete#trigger = 'omnifunc'
 " Bundles over
