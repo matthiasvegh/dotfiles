@@ -186,6 +186,11 @@ Plugin 'tmux-plugins/vim-tmux'
 Plugin 'bbchung/clighter'
 hi link clighterMemberRefExprCall clighterMemberRefExprVar
 let g:clighter_occurrences_mode=1 " enable fast symbol highlight
+
+if !empty(glob("/usr/lib/x86_64-linux-gnu/libclang-3.5.so"))
+  let g:clighter_libclang_file='/usr/lib/x86_64-linux-gnu/libclang-3.5.so'
+endif
+
 Plugin 'rhysd/committia.vim'
 Plugin 'jaxbot/semantic-highlight.vim'
 Plugin 'solarnz/thrift.vim'
