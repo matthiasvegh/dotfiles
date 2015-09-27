@@ -241,6 +241,9 @@ let g:NERDTreeDirArrows=0
 
 " bindkeys
 map gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap q: :
+" Get rid of that pesky q: as I frequently hit q, then try to :! do something
+" but can't because qi: opens the bleeding command history window
 
 "set mouse=a
 "set ttymouse=xterm2
