@@ -200,6 +200,7 @@ autocmd VimEnter * silent CompileDbPathIfExists compile_commands.json
 autocmd VimEnter * silent CompileDbPathIfExists build/compile_commands.json
 Plugin 'wellle/tmux-complete.vim'
 let g:tmuxcomplete#trigger = 'omnifunc'
+Plugin 'int3/vim-extradite'
 " Bundles over
 call vundle#end()
 " YouCompleteMe Config
