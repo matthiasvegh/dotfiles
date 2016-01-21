@@ -41,6 +41,7 @@ nnoremap <Leader>n :NERDTreeSteppedOpen<cr>
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'vim-jp/cpp-vim'
 Plugin 'rhysd/vim-clang-format'
+let g:clang_format#command = 'clang-format-3.7'
 Plugin 'itchyny/lightline.vim'
 set foldmethod=marker
 " {{{
