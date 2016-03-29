@@ -26,6 +26,8 @@ set incsearch
 let mapleader = ","
 
 set colorcolumn=81
+set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
+set list
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -205,6 +207,7 @@ Plugin 'wellle/tmux-complete.vim'
 let g:tmuxcomplete#trigger = 'omnifunc'
 Plugin 'int3/vim-extradite'
 Plugin 'wakatime/vim-wakatime'
+Plugin 'mfukar/robotframework-vim'
 " Bundles over
 call vundle#end()
 " YouCompleteMe Config
