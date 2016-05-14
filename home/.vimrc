@@ -208,6 +208,7 @@ let g:tmuxcomplete#trigger = 'omnifunc'
 Plugin 'int3/vim-extradite'
 Plugin 'wakatime/vim-wakatime'
 Plugin 'mfukar/robotframework-vim'
+Plugin 'sophacles/vim-processing'
 " Bundles over
 call vundle#end()
 " YouCompleteMe Config
