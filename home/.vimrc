@@ -7,7 +7,6 @@ set enc=utf8
 set tenc=utf-8
 set nocompatible
 filetype off
-filetype plugin indent on
 set laststatus=2
 set cindent
 
@@ -211,6 +210,7 @@ Plugin 'mfukar/robotframework-vim'
 Plugin 'sophacles/vim-processing'
 " Bundles over
 call vundle#end()
+filetype plugin indent on
 " YouCompleteMe Config
 let g:ycm_global_ycm_extra_conf = '/home/emtyvgh/.ycm_extra_conf.py'
 let g:ycm_autoclose_preview_window_after_completion = 1
