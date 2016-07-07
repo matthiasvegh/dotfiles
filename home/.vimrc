@@ -250,6 +250,9 @@ syntax on
 set background=dark
 set backspace=indent,eol,start
 colorscheme solarized
+" Terminal background is already solarized blue, when chaning tmux panes
+" use new background instead of overriding with solarized blue
+highlight Normal ctermbg=None
 set wildmenu
 let g:NERDTreeDirArrows=0
 "highlight Comment cterm=underline
