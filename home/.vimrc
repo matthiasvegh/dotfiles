@@ -209,6 +209,7 @@ Plugin 'wakatime/vim-wakatime'
 Plugin 'mfukar/robotframework-vim'
 Plugin 'sophacles/vim-processing'
 Plugin 'Matt-Deacalion/vim-systemd-syntax'
+Plugin 'rhysd/wandbox-vim'
 " Bundles over
 call vundle#end()
 filetype plugin indent on
