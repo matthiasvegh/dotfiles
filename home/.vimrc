@@ -186,12 +186,11 @@ Plugin 'ConradIrwin/vim-bracketed-paste'
 Plugin 'tpope/vim-sleuth'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'tmux-plugins/vim-tmux'
-Plugin 'bbchung/clighter'
-hi link clighterMemberRefExprCall clighterMemberRefExprVar
+Plugin 'bbchung/clighter8'
 let g:clighter_occurrences_mode=1 " enable fast symbol highlight
 
 if !empty(glob("/usr/lib/x86_64-linux-gnu/libclang-3.5.so"))
-  let g:clighter_libclang_file='/usr/lib/x86_64-linux-gnu/libclang-3.5.so'
+  let g:clighter8_libclang_path='/usr/lib/x86_64-linux-gnu/libclang-3.5.so'
 endif
 
 Plugin 'rhysd/committia.vim'
@@ -200,9 +199,9 @@ Plugin 'solarnz/thrift.vim'
 Plugin 'lyuts/vim-rtags'
 Plugin 'majutsushi/tagbar'
 nnoremap <buffer><leader>t :TagbarToggle<CR>
-Plugin 'martong/vim-compiledb-path'
-autocmd VimEnter * silent CompileDbPathIfExists compile_commands.json
-autocmd VimEnter * silent CompileDbPathIfExists build/compile_commands.json
+"Plugin 'martong/vim-compiledb-path'
+"autocmd VimEnter * silent CompileDbPathIfExists compile_commands.json
+"autocmd VimEnter * silent CompileDbPathIfExists build/compile_commands.json
 Plugin 'wellle/tmux-complete.vim'
 let g:tmuxcomplete#trigger = 'omnifunc'
 Plugin 'int3/vim-extradite'
@@ -211,6 +210,7 @@ Plugin 'mfukar/robotframework-vim'
 Plugin 'sophacles/vim-processing'
 Plugin 'Matt-Deacalion/vim-systemd-syntax'
 Plugin 'rhysd/wandbox-vim'
+Plugin 'vim-scripts/DrawIt'
 " Bundles over
 call vundle#end()
 filetype plugin indent on
@@ -239,10 +239,11 @@ let g:clang_format#style_options = {
 autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
 autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
 autocmd FileType c,cpp,objc let g:clang_format#auto_format_on_insert_leave=1
-autocmd FileType c,cpp,objc hi clighterMemberRefExprVar term=NONE cterm=NONE ctermbg=8 ctermfg=187 gui=NONE
-autocmd FileType c,cpp,objc hi clighterMacroInstantiation term=NONE cterm=NONE ctermbg=8 ctermfg=5 gui=NONE
-autocmd FileType c,cpp,objc hi clighterNamespace term=NONE cterm=italic ctermbg=8 ctermfg=60 gui=NONE
-autocmd FileType c,cpp,objc hi link clighterNamespaceRef clighterNamespace
+autocmd FileType c,cpp,objc hi clighter8MemberRefExpr term=NONE cterm=NONE ctermbg=8 ctermfg=187 gui=NONE
+autocmd FileType c,cpp,objc hi clighter8MacroInstantiation term=NONE cterm=NONE ctermbg=8 ctermfg=5 gui=NONE
+autocmd FileType c,cpp,objc hi clighter8Namespace term=NONE cterm=italic ctermbg=8 ctermfg=60 gui=NONE
+autocmd FileType c,cpp,objc hi link clighter8NamespaceRef clighter8Namespace
+autocmd FileType c,cpp,objc hi link clighter8Stat Statement
 autocmd VimEnter * Alias W w
 autocmd VimEnter * Alias Q q
 autocmd VimEnter * Alias Qa qa
