@@ -53,6 +53,7 @@ source $ZSH/oh-my-zsh.sh
 alias ct=cleartool
 export PATH=/proj/cudbdm/tools/internal/bin:/proj/madridcudb/cudb_sec/Design/clearstart_cudb:$PATH
 export PATH=/home/emtyvgh/build/bin:/proj/cudbdm/tools/external/bin/SLED10:/proj/cudbdm/tools/internal/bin:/env/seki/bin:$HOME/usr/bin:/usr/atria/bin:$HOME/bin:$PATH
+export PATH=$HOME/.cabal/bin:$PATH
 export LINKER=/app/gcc/4.7.2/LMWP3/bin/g++
 export GCC_DIR=/app/gcc/4.8.1/LMWP3
 
