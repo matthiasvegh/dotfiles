@@ -211,6 +211,7 @@ Plugin 'sophacles/vim-processing'
 Plugin 'Matt-Deacalion/vim-systemd-syntax'
 Plugin 'rhysd/wandbox-vim'
 Plugin 'vim-scripts/DrawIt'
+Plugin 'w0rp/ale'
 " Bundles over
 call vundle#end()
 filetype plugin indent on
