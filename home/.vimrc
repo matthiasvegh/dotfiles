@@ -243,9 +243,9 @@ let g:clang_format#style_options = {
 autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
 autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
 autocmd FileType c,cpp,objc let g:clang_format#auto_format_on_insert_leave=1
-autocmd FileType c,cpp,objc hi clighter8MemberRefExpr term=NONE cterm=NONE ctermbg=8 ctermfg=187 gui=NONE
-autocmd FileType c,cpp,objc hi clighter8MacroInstantiation term=NONE cterm=NONE ctermbg=8 ctermfg=5 gui=NONE
-autocmd FileType c,cpp,objc hi clighter8Namespace term=NONE cterm=italic ctermbg=8 ctermfg=60 gui=NONE
+autocmd FileType c,cpp,objc hi clighter8MemberRefExpr term=NONE cterm=NONE ctermbg=None ctermfg=187 gui=NONE
+autocmd FileType c,cpp,objc hi clighter8MacroInstantiation term=NONE cterm=NONE ctermbg=None ctermfg=5 gui=NONE
+autocmd FileType c,cpp,objc hi clighter8Namespace term=NONE cterm=italic ctermbg=None ctermfg=60 gui=NONE
 autocmd FileType c,cpp,objc hi link clighter8NamespaceRef clighter8Namespace
 autocmd FileType c,cpp,objc hi link clighter8Stat Statement
 autocmd VimEnter * Alias W w
