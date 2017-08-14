@@ -26,6 +26,7 @@ let mapleader = ","
 
 set colorcolumn=81
 set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
+autocmd VimEnter * hi SpecialKey term=bold cterm=bold ctermfg=11 ctermbg=None
 set list
 
 set rtp+=~/.vim/bundle/Vundle.vim
