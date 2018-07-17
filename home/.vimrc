@@ -25,7 +25,7 @@ set incsearch
 let mapleader = ","
 
 set colorcolumn=81
-set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
+set listchars=eol:↲,tab:␉·,trail:␠,nbsp:⎵
 autocmd VimEnter * hi SpecialKey term=bold cterm=bold ctermfg=11 ctermbg=None
 set list
 
