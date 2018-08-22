@@ -35,6 +35,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'Valloric/YouCompleteMe'
+nnoremap <Leader>t :YcmCompleter GetType<CR>
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'rosenfeld/conque-term'
 Plugin 'scrooloose/nerdtree'
