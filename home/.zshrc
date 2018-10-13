@@ -8,7 +8,7 @@ ZSH=$HOME/.oh-my-zsh
 #ZSH_THEME="agnoster"
 #ZSH_THEME="powerline"
 ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_MODE='awesome-patched'
+POWERLEVEL9K_MODE='nerdfont-complete'
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
