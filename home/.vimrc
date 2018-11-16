@@ -191,8 +191,8 @@ Plugin 'tmux-plugins/vim-tmux'
 Plugin 'bbchung/clighter8'
 let g:clighter_occurrences_mode=1 " enable fast symbol highlight
 
-if !empty(glob("/usr/lib/x86_64-linux-gnu/libclang-3.5.so"))
-  let g:clighter8_libclang_path='/usr/lib/x86_64-linux-gnu/libclang-3.5.so'
+if !empty(glob("/usr/lib/x86_64-linux-gnu/libclang-5.0.so"))
+  let g:clighter8_libclang_path='/usr/lib/x86_64-linux-gnu/libclang-5.0.so'
 endif
 
 Plugin 'rhysd/committia.vim'
