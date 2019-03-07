@@ -303,3 +303,7 @@ if &term == "screen-256color"
 endif
 
 set titlestring=vim\ %t
+
+if !empty(glob("~/.vimrc.local"))
+  source ~/.vimrc.local
+endif
