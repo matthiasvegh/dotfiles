@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+
+if [ "$(task _get rc.context)" = "work" ]; then
+  jq -c '. + {"tags": ([.tags[]?] + ["work"] | unique)}'
+else
+  jq -c '.'
+fi
